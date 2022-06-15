@@ -26,8 +26,12 @@ public class Topshiriq4 {
         if (d > 21) {
             index++;
         }
-        if (index == 13) {
-            index = 1;
+        index -= 3;
+        if (index < 1) {
+            index = 12 + index;
+        }
+        if (index >= 13) {
+            index = index - 12;
         }
         System.out.println(burjlar[index - 1]);
 
